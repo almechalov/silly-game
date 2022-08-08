@@ -1,0 +1,121 @@
+* {
+  
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    background-color: rgb(53, 38, 190);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+
+}
+
+.btn {
+    border: 0;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 15px 20px;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: 0;
+}
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+}
+
+
+.screen.up {
+    margin-top: -100vh;
+}
+.choose-insect-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.choose-insect-btn {
+    background-color: transparent;
+    border-color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: larger;
+    color: aliceblue;
+}
+
+.choose-insect-btn:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+.insects-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.insects-list li {
+    margin: 10px;
+}
+
+.game-container {
+    position: relative; 
+}
+
+.time, 
+.score {
+    position: absolute;
+    top: 20px;
+}
+
+.time {
+    left: 20px;
+
+}
+
+.score {
+
+    right: 20px;
+}
+
+.insect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.insect.caught {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.insect img {
+    width: 100px;
+    height: 100px;
+}
