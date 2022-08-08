@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <neta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"/>
+    
+    <title>Silly game</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  
+    <div class="screen">
+      <h1>Take the insect</h1>
+     <button class="btn" id="start-btn">Start</button>
+    </div>
+  <div class="screen">
+   <h2>Choose your insect</h2>
+   <ul class="insects-list">
+      <li>
+         <button class="choose-insect-btn">
+            <p>Green bug</p>
+            <img src="https://pngimg.com/uploads/bug/bug_PNG3972.png" alt="green">
+         </button>
+      </li>
+      <li>
+         <button class="choose-insect-btn">
+            <p>Black bug</p>
+            <img src="https://pngimg.com/uploads/bug/bug_PNG3999.png" alt="black">
+         </button>
+      </li>
+      <li>
+         <button class="choose-insect-btn">
+            <p>Grasshopper</p>
+            <img src="https://pngimg.com/uploads/bug/bug_PNG3987.png" alt="Grasshopper">
+         </button>
+      </li>
+   </ul>
+  </div>
+
+  <div class="screen game-container" id="game-container">
+    <h3 class="time" id="time">Time: 00:00</h3>
+    <h3 class="score" id="score">Score: 0</h3>
+ 
+    
+  </div>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
